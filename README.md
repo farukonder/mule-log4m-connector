@@ -1,18 +1,20 @@
 # Log4m connector for mule4
 
-![splash](./content/log4m.png)
+[blog](https://farukonder.github.io/thats-enough-cloud-for-today/blog/2023/11/20/log4m-for-mulesoft.html)
 
-Mule has a build in log activity. It has some lack of futures though. With this log4m connector below are the futures on top of the default one.
- - built-in json logger
- - correlationId ( either use default correlation id or a custom one )
- - transactionId ( business transaction )
- - log type ( SUCCESS or FAIL )
- - execution point name
- - attributes of the execution point of the flow
- - payload: 
- - - flow payload,
- - - error payload, in case flow gets error
- - - http response payload along with error details without any configuration, in case its http error 
+![splash](./content/log4m.min.png)
+
+Mule comes with built-in log activity, but it has some limitations. The log4m connector, however, enhances the default features by incorporating additional capabilities.
+ - Built-in JSON logger
+ - Correlation ID (choose between default correlation ID or a custom one)
+ - Transaction ID (business transaction ID)
+ - Log type (SUCCESS or FAIL)
+ - Execution point name
+ - Attributes of the execution point in the flow
+ - Payload:
+ - - Payload
+ - - Error payload (in case of flow errors)
+ - - HTTP response payload (detailed information in case of HTTP errors, without requiring additional configuration)"
 
 
 with combining this connector with elasticsearch, its really easy to classify any flow logs based on above fields easily.
