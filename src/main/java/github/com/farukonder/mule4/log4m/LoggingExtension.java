@@ -10,7 +10,7 @@ import org.mule.runtime.extension.api.annotation.dsl.xml.Xml;
  * and sources are going to be declared.
  */
 @Xml(prefix = "log4m")
-@Extension(name = "Log4M Log for Mule4")
+@Extension(name = "Log4M Json Logger")
 @Configurations(LoggingConfiguration.class)
 public class LoggingExtension {
 
