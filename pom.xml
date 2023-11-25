@@ -18,6 +18,17 @@
     </properties>
 
 
+	<distributionManagement>
+		<repository>
+			<id>cci-repo-mule</id>
+			<url>https://pkgs.dev.azure.com/cci-infra/ci-cd-mulesoft/_packaging/cci-repo-mule/maven/v1</url>
+		</repository>
+		<snapshotRepository>
+			<id>cci-repo-mule</id>
+			<url>https://pkgs.dev.azure.com/cci-infra/ci-cd-mulesoft/_packaging/cci-repo-mule/maven/v1</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
